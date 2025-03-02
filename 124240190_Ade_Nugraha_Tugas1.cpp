@@ -110,12 +110,12 @@ int main()
                  << setw(30) << "Judul" << " | "
                  << setw(6) << "Rating" << " |\n";
             garis();
-
             for (int i = 0; i < N; ++i)
             {
-                cout << "| " << left << setw(6) << films[i].kode << " | "
-                     << setw(30) << films[i].judul << " | "
-                     << setw(6) << films[i].rating << " |\n";
+                Film *film = &films[i];
+                cout << "| " << left << setw(6) << film->kode << " | "
+                     << setw(30) << film->judul << " | "
+                     << setw(6) << film->rating << " |\n";
             }
 
             garis();
@@ -214,9 +214,10 @@ int main()
 
             for (int i = 0; i < N; ++i)
             {
-                cout << "| " << left << setw(6) << films[i].kode << " | "
-                     << setw(30) << films[i].judul << " | "
-                     << setw(6) << films[i].rating << " |\n";
+                Film *film = &films[i];
+                cout << "| " << left << setw(6) << film->kode << " | "
+                     << setw(30) << film->judul << " | "
+                     << setw(6) << film->rating << " |\n";
             }
 
             garis();
@@ -245,9 +246,10 @@ int main()
 
             for (int i = 0; i < N; ++i)
             {
-                cout << "| " << left << setw(6) << films[i].kode << " | "
-                     << setw(30) << films[i].judul << " | "
-                     << setw(6) << films[i].rating << " |\n";
+                Film *film = &films[i];
+                cout << "| " << left << setw(6) << film->kode << " | "
+                     << setw(30) << film->judul << " | "
+                     << setw(6) << film->rating << " |\n";
             }
 
             garis();
