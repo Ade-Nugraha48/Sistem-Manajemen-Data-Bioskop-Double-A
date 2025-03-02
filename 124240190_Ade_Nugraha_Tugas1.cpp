@@ -10,7 +10,7 @@ struct Film
     float rating;
 };
 
-Film films[10] = {
+Film films[] = {
     {"Omniscience Reader's Viewpoint", "A001", 9.5},
     {"Eleceed", "B002", 9.8},
     {"Star Embracing Swordmaster", "C003", 9.0},
@@ -63,6 +63,23 @@ void garis()
 
 int main()
 {
+
+    string username, password;
+
+    cout << "Masukkan username: ";
+    cin >> username;
+    cout << "Masukkan password: ";
+    cin >> password;
+
+    if (username == "ade" && password == "123")
+    {
+        cout << "Login berhasil !!\n";
+    }
+    else
+    {
+        cout << "Username atau password salah.\n";
+        return 0;
+    }
 
     int menu;
     string cari;
